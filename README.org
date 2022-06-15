@@ -3,6 +3,10 @@
 This is my personalized Guix System Configuration, based heavily on the Arden's configs, or as I've taken to calling it, the GNU/Linux+Arden system. See the breadth of their original project [[https://github.com/arden-config/guix-dotfiles/][here.]]
 
 
+---- THIS IS A WORK IN PROGRESS ----
+You are better off checking out the original project linked above than taking any code from here.
+
+
 This is our opinionated, minimalist GNU Guix configuration.
 It features [[https://sr.ht/abcdw/rde/][ =rde= ]], Emacs (evil mode) and various Wayland applications.
 
