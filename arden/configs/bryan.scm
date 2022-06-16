@@ -1,4 +1,4 @@
-(define-module (engstrand configs bryan)
+(define-module (arden configs bryan)
   #:use-module (rde features)
   #:use-module (rde features ssh)
   #:use-module (rde features base)
@@ -6,16 +6,16 @@
   #:use-module (gnu services)
   #:use-module (gnu services databases)
   #:use-module (gnu home-services ssh) ;; rde home-service
-  #:use-module (engstrand utils)
-  #:use-module (engstrand configs)
-  #:use-module (engstrand features xorg)
-  #:use-module (engstrand features sync)
-  #:use-module (engstrand features utils)
-  #:use-module (engstrand features state)
-  #:use-module (engstrand features emacs)
-  #:use-module (engstrand features browsers)
-  #:use-module (engstrand features virtualization)
-  #:use-module (engstrand features wayland))
+  #:use-module (arden utils)
+  #:use-module (arden configs)
+  #:use-module (arden features xorg)
+  #:use-module (arden features sync)
+  #:use-module (arden features utils)
+  #:use-module (arden features state)
+  #:use-module (arden features emacs)
+  #:use-module (arden features browsers)
+  #:use-module (arden features virtualization)
+  #:use-module (arden features wayland))
 
 (define-public %user-features
   (append
