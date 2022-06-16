@@ -1,4 +1,4 @@
-(define-module (engstrand channels)
+(define-module (arden channels)
   #:use-module (guix channels))
 
 (list
