@@ -1,4 +1,4 @@
-(define-module (engstrand features laptop)
+(define-module (arden features laptop)
   #:use-module (rde features)
   #:use-module (rde features predicates)
   #:use-module (guix gexp)
@@ -12,7 +12,7 @@
   #:use-module (dwl-guile configuration)
   #:use-module (dwl-guile configuration records)
   #:use-module (dtao-guile home-service)
-  #:use-module (engstrand utils)
+  #:use-module (arden utils)
   #:export (
             feature-laptop
             feature-laptop-tlp
