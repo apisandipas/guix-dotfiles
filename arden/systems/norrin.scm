@@ -51,28 +51,11 @@
     #:monitors
     (list
      (dwl-monitor-rule
-      (name "DP-1")
+      (name "eDP-1")
       (x 0)
-      (y 0)
-      (rotate 'right)
-      (width 1920)
-      (height 1440)
-      (refresh-rate 60)
-      (adaptive-sync? #t))
-     (dwl-monitor-rule
-      (name "DP-2")
-      (x 3000)
       (y 0)
       (width 1920)
       (height 1080)
       (refresh-rate 60)
       (adaptive-sync? #t))
-     (dwl-monitor-rule
-      (name "HDMI-1")
-      (x 1920)
-      (y -200)
-      (rotate 'left)
-      (width 1920)
-      (height 1440)
-      (refresh-rate 60)
-      (adaptive-sync? #t))))))
+     ))))
