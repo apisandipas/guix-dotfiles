@@ -313,7 +313,7 @@
    ;; (feature-emacs-monocle
    ;;  #:olivetti-body-width 100)
    (feature-emacs-dired)
-   (feature-emacs-faces)
+   ;;(feature-emacs-faces)
    (feature-emacs-completion
     #:mini-frame? #f)
    (feature-emacs-corfu)
