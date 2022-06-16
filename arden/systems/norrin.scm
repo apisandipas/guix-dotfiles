@@ -21,14 +21,14 @@
   (list
    (feature-host-info
     #:host-name "norrin"
-    #:timezone %engstrand-timezone
-    #:locale %engstrand-locale)
+    #:timezone %arden-timezone
+    #:locale %arden-locale)
    (feature-bootloader
     #:bootloader-configuration
     (bootloader-configuration
      (bootloader grub-efi-bootloader)
      (targets '("/boot/efi"))
-     (keyboard-layout %engstrand-keyboard-layout)))
+     (keyboard-layout %arden-keyboard-layout)))
    (feature-file-systems
     ;; #:mapped-devices %mapped-devices
     #:file-systems
