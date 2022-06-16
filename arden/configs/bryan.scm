@@ -34,4 +34,4 @@
     (feature-firefox
      #:default-browser? #t)
     (feature-kdeconnect))
-   %engstrand-emacs-base-features))
+   %arden-emacs-base-features))
