@@ -43,10 +43,10 @@
   EndSection")
 
 (define %base-xorg-dwm-system-packages
-  (list chili-sddm-theme arden-dwm))
+  (list chili-sddm-theme engstrand-dwm))
 
 (define %base-xorg-dwm-home-packages
-  (list arden-dmenu arden-dsblocks arden-st arden-utils))
+  (list engstrand-dmenu engstrand-dsblocks engstrand-st engstrand-utils))
 
 ;; TODO: Split into multiple features?
 (define* (feature-xorg-dwm
