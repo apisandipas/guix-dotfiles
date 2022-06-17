@@ -40,7 +40,7 @@
         "quiet"))
 
 (define-public %arden-keyboard-layout
-  (keyboard-layout "us,se"
+  (keyboard-layout "us,en"
                    #:options
                    '("caps:ctrl")))
 

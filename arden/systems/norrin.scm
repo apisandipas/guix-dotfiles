@@ -1,9 +1,11 @@
 (define-module (arden systems norrin)
-  #:use-module (arden  utils)
+  #:use-module (arden utils)
   #:use-module (arden systems)
   #:use-module (arden features display)
   #:use-module (rde features system)
+  #:use-module (rde features fontutils)
   #:use-module (dwl-guile home-service)
+  #:use-module (gnu packages fonts)
   #:use-module (gnu bootloader)
   #:use-module (gnu bootloader grub)
   #:use-module (gnu system file-systems)
@@ -29,18 +31,21 @@
      (bootloader grub-efi-bootloader)
      (targets '("/boot/efi"))
      (keyboard-layout %arden-keyboard-layout)))
+   (feature-fonts
+    #:font-monospace (font "Iosevka" #:size 11 #:weight 'regular)
+    #:font-packages (list font-iosevka font-fira-mono))
    (feature-file-systems
     ;; #:mapped-devices %mapped-devices
     #:file-systems
     (list
      (file-system
       (mount-point "/boot/efi")
-      (device (uuid "1A1B-7B25" 'fat32))
+      (device (file-system-label "EFI_PART"))
       (type "vfat"))
      (file-system
       (mount-point "/home")
       (device
-       (file-system-label "root_partition"))
+       (file-system-label "home_partition"))
       (type "ext4"))
      (file-system
       (mount-point "/")
