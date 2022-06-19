@@ -2,9 +2,11 @@
   #:use-module (rde features)
   #:use-module (rde features ssh)
   #:use-module (rde features base)
+  #:use-module (rde features fontutils)
   #:use-module (rde features gnupg)
   #:use-module (gnu services)
   #:use-module (gnu services databases)
+  #:use-module (gnu packages fonts)
   #:use-module (gnu home-services ssh) ;; rde home-service
   #:use-module (arden utils)
   #:use-module (arden configs)
